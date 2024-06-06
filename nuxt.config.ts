@@ -4,4 +4,14 @@ export default defineNuxtConfig({
   experimental: {
     typedPages: true,
   },
+  modules: ["@kgierke/nuxt-basic-auth"],
+  basicAuth: {
+    enabled: true,
+    users: [
+      {
+        username: "admin",
+        password: "admin",
+      },
+    ],
+  },
 });
